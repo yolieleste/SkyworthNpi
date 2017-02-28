@@ -121,3 +121,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = "/home/yolieleste/SkyworthNpi/blog/static"
