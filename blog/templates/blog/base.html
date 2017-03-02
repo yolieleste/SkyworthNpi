@@ -88,8 +88,10 @@ $(document).ready(function(){
     .columns.adjust();
    });
    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
-
 });
+$(window).resize(function() {
+    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+  });
     </script>
 
   </body>
