@@ -1,9 +1,11 @@
 {% extends "blog/base.html" %}
+{% load static %}
 
 {% block content %}
 
 <div class="container">
         <h1>Welcome to SKYWORTH NPI Check List</h1>
+	<!--
 	{% for post in posts %}
 	<div>
 		<p>
@@ -15,6 +17,47 @@
 		</p>
 	</div>
 	{% endfor %}
+	-->
+</div>
+
+<div class="containter">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="carousel slide" data-ride="carousel" data-interval="3000" id="myCarousel">
+
+				<!-- Indicators -->
+
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for sliders -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="{% static "img/ccmx.png" %}" alt="ccmx">
+						<div class="carousel-caption">
+							<h3>Proseguir la Mejora Continua y la Exelencia en Calidad</h3>
+						</div>
+					</div>
+					<div class="item">
+						<img src="{% static "img/TaipeiBU.png" %}" alt="taipei">
+						<div class="carousel-caption">
+							<h3>Hacerlo lo Correcto la Primera Vez</h3>
+						</div>
+					</div>
+					<div class="item">
+						<img src="{% static "img/skyworth.png" %}" alt="sky">
+						<div class="carousel-caption">
+							<h3>Proveer Productos y Servicios que Excedan las Expectivas del Cliente</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="container">
